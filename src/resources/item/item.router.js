@@ -13,11 +13,13 @@ const controller = (req, res) => {
 
 const router = Router()
 
+// /api/item
 router
   .route('/')
   .get(controller)
   .post(controller)
 
+// /api/item/:id
 router
   .route('/:id')
   .get(controller)
